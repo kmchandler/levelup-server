@@ -1,0 +1,13 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+          "game": 1,
+          "description": "board game gathering",
+          "date": "2022-11-19",
+          "time": "19:30",
+          "organizer": 1
+      }
+    }
+  ]
