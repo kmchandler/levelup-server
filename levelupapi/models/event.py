@@ -1,6 +1,6 @@
 from django.db import models
 from .gamer import Gamer
-from .games import Game
+from .game import Game
 
 class Event(models.Model):
 
@@ -9,3 +9,6 @@ class Event(models.Model):
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)
     organizer = models.ForeignKey(Gamer, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
