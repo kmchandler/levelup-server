@@ -1,8 +1,6 @@
-
 from django.db import models
 from .gamer import Gamer
 from .event import Event
-
 
 
 class EventGamer(models.Model):
