@@ -9,6 +9,7 @@ class Event(models.Model):
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)
     organizer = models.ForeignKey(Gamer, on_delete=models.CASCADE)
+    objects = models.Manager()
 
     def __str__(self):
         return self.name
